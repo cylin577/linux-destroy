@@ -1,43 +1,45 @@
-# linux-destroy
+# 🛑 Linux Destroy Script  
 
-## Disclaimer
+## ⚠️ Disclaimer  
+**WARNING:** This script is extremely dangerous and can cause **irreversible damage** to your system, including permanent data loss and system failure. **Use at your own risk.** The author is not responsible for any consequences resulting from running this script.  
 
-**WARNING**: This script is intended **solely for educational purposes** and should only be run with a full understanding of the potential consequences. 
+## 📌 Overview  
+The **Linux Destroy Script** provides several destructive options to either **permanently** or **temporarily** damage a Linux system. This script is intended for **educational** and **research** purposes only.  
 
-Running this script can cause:
+## ❗ Features  
+- **Permanent Destruction**  
+  - `rm -rf /` – Deletes all system files irreversibly.  
+  - `echo 000 > /dev/sda` – Wipes the system disk.  
+- **Temporary Disruption**  
+  - **Fork bomb** – Consumes all system resources, freezing the machine.  
+  - **`tail /dev/zero`** – Overloads the CPU.  
+  - **Clearing critical memory files** – Can make the system unstable.  
 
-- Irreversible damage to your operating system.
-- Loss of critical data.
-- System instability or permanent failure.
+## 🚀 Usage  
 
-By proceeding, you acknowledge that you:
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/cylin577/linux-destroy.git
+cd linux-destroy
+```
 
-- Accept full responsibility for any damage caused.
-- Understand the risks of running destructive commands.
+### 2️⃣ Make the Script Executable  
+```bash
+chmod +x linux_destroy.sh
+```
 
-**USE THIS SCRIPT AT YOUR OWN RISK.**
-
-## Description
-
-This script provides several options for experimenting with destructive commands in Linux. It features two main categories:
-
-- **Permanently Destroy**: Commands that can cause permanent damage to your system, such as deleting critical files and device configurations.
-- **Temporary Destroy**: Commands that affect system resources temporarily, such as running a fork bomb or clearing memory files.
-
-## Features
-
-- **Permanently Destroy**:
-  - `rm -rf /`: Deletes all files on the system.
-  - `echo 000 > /dev/sda`: Writes zeros to the storage device.
-  
-- **Temporary Destroy**:
-  - Fork bomb: Creates an infinite loop of processes.
-  - `tail /dev/zero`: Spawns a continuous stream of zero bytes to overwhelm the system.
-  - Clears `/proc/kcore`, `/dev/kmem`, and `/dev/mem` files, potentially affecting system memory.
-
-## Usage
-
-To use the script, simply run the script in a terminal:
-
+### 3️⃣ Run the Script  
 ```bash
 ./linux_destroy.sh
+```
+
+## 🛡️ Warning  
+- **Do not run this script on a production system.**  
+- **Ensure you fully understand the consequences before executing any option.**  
+- **Running this script will likely result in total system failure.**  
+
+## 📜 License  
+This script is provided **as-is** for educational purposes. The author assumes no responsibility for any misuse.  
+
+---
+❌ **DO NOT RUN THIS ON ANY SYSTEM YOU WANT TO KEEP!** ❌
