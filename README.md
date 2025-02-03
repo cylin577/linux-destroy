@@ -33,19 +33,12 @@ git clone https://github.com/cylin577/linux-destroy.git
 cd linux-destroy
 ```
 
-### 2️⃣ Install Dependencies
-This script requires `figlet` to display ASCII art. Install it if not already present:
-```bash
-sudo apt update
-sudo apt install -y figlet
-```
-
-### 3️⃣ Make the Script Executable
+### 2️⃣ Make the Script Executable
 ```bash
 chmod +x linux_destroy.sh
 ```
 
-### 4️⃣ Run the Script
+### 3️⃣ Run the Script
 ```bash
 ./linux_destroy.sh
 ```
